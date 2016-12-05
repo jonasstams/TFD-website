@@ -1,0 +1,31 @@
+<div ng-controller="navigationController">
+    <navigation objects="navItems.menu" current="currentLocation"></navigation>
+</div>
+<div id="contents" class="row"> <!-- start of contents -->
+    <h2><span>Desserts</span></h2>
+    <div id="menus" ng-controller="menuController">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Ice Creams</h3>
+               <menu-item obj1="dessert" obj2="dessert2" ></menu-item>
+              <menu-item></menu-item>
+            </div>
+            <div class="col-md-6">
+                <h3>Vestibulum Scelerisque</h3>
+                <ul>
+                    <li class="col-md-6">
+                        <span class="price">$9.78</span>
+                        Dolor sit amet
+                        <p>Suspendisse potenti. Phasellus ac nibh massa. Etiam a enim est.</p>
+                    </li>
+                    <li class="col-md-6">
+                        <span class="price">$9.78</span>
+                        Dolor sit amet
+                        <p>Suspendisse potenti. Phasellus ac nibh massa. Etiam a enim est.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,30 @@
+{
+  "name": "TFD-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "angular-material": "^1.1.1",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonasstams/TFD-website.git"
+  },
+  "keywords": [
+    "The",
+    "Flying",
+    "Dutchman",
+    "Website"
+  ],
+  "author": "Jonas Stams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonasstams/TFD-website/issues"
+  },
+  "homepage": "https://github.com/jonasstams/TFD-website#readme"
+}
