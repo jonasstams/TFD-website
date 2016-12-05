@@ -7,10 +7,11 @@
 		<div id="contents-wide"> <!-- start of contents -->
 			<h2 class="booking"><span>Our location</span></h2>
 			<div class="row">
-				<div class="col-xs-6 col-md-4 address-padding">
+				<div class="col-xs-6 col-md-4">
 					<form>
 						<address>
-							<strong>The Flying Dutchman Bar - Restaurant</strong><br>
+                            <img src="assets/images/logo-black.png" />
+							<span class="spy">The Flying Dutchman Bar - Restaurant</span><br>
 							22/5 Moo 6<br>
 							Woktum, Ko Phangan<br>
 							+66 80 808 9045
@@ -22,15 +23,39 @@
 					</form>
 				</div>
 				<div class="col-xs-6 col-md-8">
-					<ng-map center="[9.738904, 99.978241]" zoom="18">
+					<ng-map center="[9.738904, 99.978241]" id="map" zoom="18">
 						<marker position="[9.738904, 99.978241]" title="The Flying Dutchman Bar"></marker>
 					</ng-map>
 				</div>
 			</div>
 			<div class="row address-padding">
-			<h2 class="booking"><span>Book an Event</span></h2>
-			<div id="booking">
-				<form action="" method="">
+
+                <h2 ng-click="messageForm ? messageForm = false : messageForm = true" class="booking pointer" ng-init="messageForm = true"><span>Send us a message</span></h2>
+                <div class="booking" ng-if="messageForm">
+                    <form action="" method="POST">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td colspan="2"><span>Your Name</span><input type="text" class="name"></td>
+                                <td><span>Your Email</span><input type="text"></td>
+                            </tr>
+                           </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span>Your Message</span>
+                                    <textarea></textarea>
+                                    <input type="submit" value="Submit" class="button">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+			<h2 ng-click="bookingbool ? bookingbool = false : bookingbool = true" class="booking pointer"><span>Book an Event</span></h2>
+
+
+			<div class="booking" ng-if="bookingbool">
+				<form action="" method="POST">
 					<table>
 						<tbody>
 						<tr>

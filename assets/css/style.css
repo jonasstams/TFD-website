@@ -279,12 +279,12 @@ body {
 	 padding-top: 5%;
  }
 /*------------------------- book-events us page -------------------------*/
-#booking form {
+.booking form {
 	display: inline-block;
 	height: 401px;
 	width: 960px;
 }
-#booking form table {
+.booking form table {
 	float: left;
 	width: 940px;
 	border-collapse: separate;
@@ -292,32 +292,32 @@ body {
 	padding: 6px 0 0;
 	text-align: left;
 }
-#booking form table span {
+.booking form table span {
 	display: block;
 }
-#booking form table td {
+.booking form table td {
 	line-height: 24px;
 	padding: 6px 5px;
 	vertical-align: center;
 }
-#booking form table td textarea {
+.booking form table td textarea {
 	height: 179px;
 	width: 100%;
 	border: 1px solid #000000;
 	margin: 0 0 14px;
 }
-#booking form table td input {
+.booking form table td input {
 	width: 100%;
 	border: 1px solid #000000;
 }
-#booking form table td input.number {
+.booking form table td input.number {
 	width: 60px;
 }
-#booking form table td input.radio {
+.booking form table td input.radio {
 	width: 16px;
 	border: 0px;
 }
-#booking form table td input.button {
+.booking form table td input.button {
 	float: right;
 	background-color: transparent;
 	color: #4b4b4b;
@@ -329,6 +329,10 @@ body {
 	border: 0px;
 	margin: 0px;
 	padding: 0px;
+}
+
+.pointer{
+	cursor: pointer;
 }
 
 /*--------------------------About us Page --------------------------*/
@@ -352,7 +356,7 @@ body {
 }
 
 /*-------------------------- Menu Pages --------------------------*/
-#menus p, #menus p a, #booking p, #booking p a {
+#menus p, #menus p a, .booking p, .booking p a {
 	color: #333333;
 	font-size: 14px;
 	line-height: 24px;
@@ -580,8 +584,16 @@ body {
 
 /*------------------------- Map -------------------------*/
 #map{
-	height: 400px;
-	width: 100%;
+	display: block;
+	height: 250px;
+	width: 80%;
+	float: right;
+	margin-right: 20px;
+	border: 1px solid black;
+}
+
+.spy{
+	color:transparent;
 }
 
 #image-gallery img {
